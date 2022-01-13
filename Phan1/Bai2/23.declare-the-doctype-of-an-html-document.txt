@@ -1,0 +1,4 @@
+<!DOCTYPE html>
+<html>
+  <h1>THIS IS THE CONTENT</h1>
+</html>
