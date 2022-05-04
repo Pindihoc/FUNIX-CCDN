@@ -1,0 +1,19 @@
+---------------------Algorithm Timer Report------------------
+----------------------BubbleSort---SelectSort---InsertSort---
+Descending array:        8000          3100       600
+Ascending array:         1100          3000       500
+Random array:            3000          3200       500
+
+Đây là kết quả thực nghiệm với mảng dữ liệu gồm 15 phần tử, và đơn vị thời gian là nano-giây.
+
+Phân tích case các thuật toán:
+	1. Bubble sort: 
+		- best case: dữ liệu đã được sắp xếp theo chiều tăng dần (ascending array).
+		- average case: dữ liệu xáo trộn ngẫu nhiên (random array).
+		- worst case: dữ liệu sắp xếp theo chiều giảm dần (descending array).
+	2. Selection sort:
+		- với thuật toán này mọi kiểu dữ liệu đều như nhau, không phân biệt case.
+	3. Insertion sort:
+		- với thuật toán này mọi kiểu dữ liệu đều như nhau, không phân biệt case.
+		- Thuật toán Insertion Sort cho kết quả tối ưu nhất, tuy nhiên phức tạp về mặt thuật toán.
+

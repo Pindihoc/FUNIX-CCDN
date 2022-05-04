@@ -1,0 +1,2 @@
+Input value: 9.0
+Indext of fist element: 6
