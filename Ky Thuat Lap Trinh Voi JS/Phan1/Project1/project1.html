@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project1</title>
+</head>
+
+<body>
+    <p>Click the button to display an alert box.</p>
+
+    <button onclick=" notify()">Try it</button>
+
+    <p id="name" style="font-weight: bold;"></p>
+    <p id="city" style="font-weight: bold;"></p>
+    <p id="mobile" style="font-weight: bold;"></p>
+    <p id="age" style="font-weight: bold;"></p>
+    <p id="email" style="font-weight: bold;"></p>
+    <p id="job" style="font-weight: bold;"></p>
+    <div id="div" style="display: none">
+        <button onclick="nextStep()">Bước Tiếp Theo</button>
+    </div>
+
+    <script>
+        function notify() {
+            // Thông báo chào người dùng
+            alert("Chào mừng bạn đến với ứng dụng JavaScript đầu tiên");
+
+            // Lấy tên người dùng
+            let name = prompt("Hãy nhập tên của bạn:", "LA TIEN");
+            document.getElementById("name").innerHTML = "Tên: " + name;
+
+            // Lấy thống tin thành phố từ người dùng
+            let city = prompt("Hãy nhập tên thành phố bạn đang sống:", "Ho Chi Minh");
+            document.getElementById("city").innerHTML = "Thành phố: " + city;
+
+            // Lấy số điện thoại người dùng
+            let mobile = prompt("Hãy nhập số điện thoại của bạn:", "0975 626268");
+            document.getElementById("mobile").innerHTML = "Số điện thoại: " + mobile;
+
+            // Lấy năm sinh và xác định tuổi người dùng
+            let year = prompt("Hãy nhập năm sinh của bạn:", "1996");
+            while (birthyearApprove(year) == false) {
+                year = prompt("Năm sinh không thể lớn hơn năm hiện tại, vui lòng nhập lại năm sinh:", "1996");
+            }
+            let age = birthyearApprove(year);
+            document.getElementById("age").innerHTML = "Tuổi: " + age;
+
+            // Xác định Email người dùng
+            let email = prompt("Hãy nhập email của bạn:", "pindihoc@gmail.com");
+            document.getElementById("email").innerHTML = "Email: " + email;
+
+            // Xác định nghề nghiệp người dùng
+            let job = prompt("Vui lòng cho biết nghề nghiệp hiện tại của bạn: ", "Sinh viên");
+            document.getElementById("job").innerHTML = "Job: " + job;
+
+            // Giai đoạn kết thúc thu nhập dữ liệu từ người dùng
+            document.getElementById("div").style.display = "block";
+        }
+
+        // Hàm xét điều kiện về năm sinh
+        function birthyearApprove(year) {
+            let currentyear = parseInt(new Date().getFullYear());
+            let yearr = parseInt(year);
+            if (yearr > currentyear) {
+                return false;
+            } else {
+                return (currentyear - yearr);
+            }
+        }
+    </script>
+</body>
+
+</html>

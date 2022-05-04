@@ -1,0 +1,108 @@
+/* mobile first */
+
+.background8e806a {
+    background-color: #8e806a;
+}
+
+.backgroundc3b091 {
+    background-color: #c3b091;
+}
+
+.backgrounde4cda7 {
+    background-color: #e4cda7;
+}
+
+.backgroundffe6bc {
+    background-color: #ffe6bc;
+}
+
+.colorblack {
+    color: black;
+}
+
+.colorwhite {
+    color: white;
+}
+
+#company-logo {
+    width: 120px;
+    height: 40px;
+    object-fit: contain;
+}
+
+#menuicon {
+    padding-top: 10px;
+    line-height: 0;
+    font-size: 2rem;
+}
+
+nav a:hover {
+    color: white;
+}
+
+p {
+    text-align: justify;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    margin-top: 74px;
+    clear: both;
+}
+
+footer {
+    padding: 1% 3%;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#bannercaption {
+    margin: auto 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: 'Neonderthaw', cursive;
+}
+
+.modal-backdrop {
+    z-index: 0;
+}
+
+
+/* reponsive for tablets */
+
+@media only screen and (min-width: 768px) {
+    main {
+        margin-top: 55px;
+    }
+    .carousel-item img {
+        max-height: 420px;
+        object-fit: fill;
+    }
+}
+
+
+/* reponsive for laptop and desktops */
+
+@media only screen and (min-width: 992px) {
+    .carousel-item img {
+        max-height: 500px;
+        object-fit: fill;
+    }
+}

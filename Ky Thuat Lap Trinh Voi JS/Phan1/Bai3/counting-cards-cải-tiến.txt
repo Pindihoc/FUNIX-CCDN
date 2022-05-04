@@ -1,0 +1,31 @@
+let count = 0;
+
+function cc(card) {
+  // Only change code below this line
+
+  // declare an object variable 
+  let countChange = {
+      "1" : [2,3,4,5,6],
+      "0" : [7,8,9],
+      "-1" : [10,'J','Q','K','A']
+  };
+
+  // for loops through an object variable to find if a  match between the card and sub-arrays of object variable
+  for (let key in countChange) {
+    if (countChange[key].includes(card)) {
+      count += parseInt(key);
+      break;}
+  }
+
+  // inform to users base on the count variable
+  if (count > 0) {
+    return count + " Bet";
+  }
+  else {
+    return count + " Hold";
+  }
+
+  // Only change code above this line
+}
+
+cc(2); cc(3); cc(7); cc('K'); cc('A');

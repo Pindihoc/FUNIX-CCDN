@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- BS5 icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <h2 id="id1">abc</h2>
+    <button type="button">Ket Thuc Mon JS</button>
+    <script>
+        //cau1
+        function myFunc(a, b) {
+            return a + b;
+        }
+        console.log(myFunc(3, 5));
+
+        //cau2
+        var arr = [1, 2, 3, 4];
+        var sum = 0;
+        for (var i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        console.log(sum);
+
+        //cau3
+        var obj = {
+            "id": "123",
+            "ho&ten": "LaTien"
+        };
+        obj.diem = 7.0; //add 1 more property to existed object
+        console.log(obj);
+
+
+        $(document).ready(function() { //cau4 giai thich $.ready()
+            $("h2").css("color", "red"); //cau3
+            $("h2").css("font-size", "50px"); //cau3
+            $("h2").hover(function() { //cau3
+                $(this).css("color", "blue");
+            });
+            $("button").click(function() { //cau5 click vao button xuat hien them the h2
+                $("#id1").append("<h2>Another h2 tag</h2>");
+            });
+        });
+
+        //cau 7
+        console.log("2" + "2" - "2"); // bang gi va giai thich
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+
+<body>
+    <p>Click Refresh to see a random question every time! <br/></p>
+    <form id="form1">
+        <p id="question"></p>
+        <button type="button" onclick="outputname()">Check answer</button>
+    </form>
+    <script type="text/javascript">
+        let number1 = new Array();
+        let number2 = new Array();
+        for (let i = 1; i <= 5; i++) {
+            number1[i] = Math.floor(Math.random() * 10 + 1);
+            number2[i] = Math.floor(Math.random() * 10 + 1);
+            document.getElementById("question").innerHTML += "Question " + i + ": " + number1[i] + "+" + number2[i] + "= <input name=\"name" + i + "\" type=\"text\" size=\"3\"> <br/>";
+        }
+
+        function outputname() {
+            document.getElementById("demo").innerHTML = "";
+            let x, y, name, a, b, answer;
+            x = document.getElementById("form1");
+            for (let j = 1; j <= 5; j++) {
+                y = x.elements["name" + j].value;
+                if (y == (number1[j] + number2[j])) {
+                    document.getElementById("demo").innerHTML += "Your answer is correct in question " + j + "<br/>";
+                } else {
+                    document.getElementById("demo").innerHTML += "Your anwer is wrong in question " + j + "<br/>";
+                }
+            }
+        }
+    </script>
+    <p id="demo"></p>
+</body>
+
+</html>

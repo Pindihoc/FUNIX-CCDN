@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branching</title>
+</head>
+
+<body>
+    <script language="javascript" type="text/javascript">
+        var userAge = prompt("What's your age?", "");
+        var citizen = true;
+        document.write("You said you're " + userAge + " years old.");
+        if (citizen && userAge >= 18) { //&& and || or
+            alert("You can vote!");
+        } else {
+            alert("you cannot vote!");
+        }
+
+        document.write("<br/>");
+
+        if (userAge < 18) {
+            document.write("But at least you have your youth.");
+        } else if (userAge < 29) {
+            document.write("At least you're not 30 yet!");
+        } else if (userAge < 39) {
+            document.write("You should have settled down by now!");
+        } else if (userAge < 49) {
+            document.write("Enjoy your life. Middle age is fun!");
+        } else {
+            document.write("You're over the hill!");
+        }
+    </script>
+</body>
+
+</html>

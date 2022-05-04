@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="frm">
+        <input name="result">
+        </br>
+        <input type="button" name="1" value="1" onclick="run1()">
+        <input type="button" name="1" value="2" onclick="run2()">
+        <input type="button" name="1" value="3" onclick="run3()">
+        <input type="button" name="plus" value="+" onclick="runplus()">
+        <br>
+        <input type="button" name="calc" value="=" onclick="evalu()">
+    </form>
+    <script>
+        function run1() {
+            document.frm.result.value = "1";
+        }
+
+        function run2() {
+            document.frm.result.value = "2";
+        }
+
+        function run3() {
+            document.frm.result.value = "3";
+        }
+
+        function runplus() {
+            document.frm.result.value = "+";
+        }
+
+        function evalu() {
+            var evalo = eval(document.frm.result.value);
+            document.frm.result.value = evalo;
+        }
+    </script>
+</body>
+
+</html>
