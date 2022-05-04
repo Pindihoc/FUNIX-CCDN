@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #7B8894;
+    border: none;
+    height: 5rem;
+    width: 100%;
+}
+
+nav div {
+    display: inline-block;
+    width: 49.5%;
+    height: 5rem;
+}
+
+nav ul {
+    display: flex;
+    position: relative;
+    top: 2rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 auto;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+main {
+    background-color: none;
+    margin: 0 1rem;
+    overflow: auto;
+}
+
+main section h1 {
+    margin: 0;
+    padding: 2rem 0;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+main section h2 {
+    margin: 0;
+    padding: 2rem 0;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+main section p {
+    margin: 0;
+}
+
+footer {
+    margin: 0 1rem;
+    clear: both;
+}
+
+footer h3 {
+    margin: 0;
+    padding: 2rem 0;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+#hr {
+    display: none;
+}
+
+
+/*  */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+picture {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* Responsive Grid */
+
+
+/* For Mobile smaller than 768px*/
+
+[class*="col-"] {
+    width: 100%;
+}
+
+
+/* For Tablets between 768px-992px*/
+
+@media only screen and (min-width: 768px) {
+    .col-sm-1 {
+        width: 8.33%;
+    }
+    .col-sm-2 {
+        width: 16.66%;
+    }
+    .col-sm-3 {
+        width: 25%;
+    }
+    .col-sm-4 {
+        width: 33.33%;
+    }
+    .col-sm-5 {
+        width: 41.66%;
+    }
+    .col-sm-6 {
+        width: 50%;
+    }
+    .col-sm-7 {
+        width: 58.33%;
+    }
+    .col-sm-8 {
+        width: 66.66%;
+    }
+    .col-sm-9 {
+        width: 75%;
+    }
+    .col-sm-10 {
+        width: 83.33%;
+    }
+    .col-sm-11 {
+        width: 91.66%;
+    }
+    .col-sm-12 {
+        width: 100%;
+    }
+    #hr {
+        display: block;
+    }
+    .left {
+        float: left;
+        margin-left: 2rem;
+    }
+    .right {
+        float: right;
+        margin-right: 2rem;
+    }
+    nav ul {
+        display: inline-block;
+        width: fit-content;
+    }
+    nav li {
+        margin: 0 0.5rem;
+    }
+    section div {
+        float: left;
+        padding: 0.5rem;
+    }
+}
+
+
+/* For other devices greater than 992px*/
+
+@media only screen and (min-width: 992px) {
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+    .left {
+        float: left;
+        margin-left: 4rem;
+    }
+    body nav {
+        background-color: white;
+    }
+    #hr {
+        display: none;
+    }
+    .right {
+        float: right;
+        margin-right: 4rem;
+    }
+    nav ul {
+        display: inline-block;
+        width: fit-content;
+    }
+    nav li {
+        margin: 0 1.5rem;
+    }
+    nav li a {
+        color: gray;
+    }
+    /*  */
+    main {
+        background-color: lightgray;
+        margin: 0;
+    }
+    #banner {
+        clear: both;
+        position: relative;
+        background-image: url("https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png");
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 500px;
+        display: block;
+    }
+    #banner h1 {
+        position: absolute;
+        top: 120px;
+        left: 70px;
+        margin: 0px;
+        color: white;
+        font-family: 'Source Serif Pro', serif;
+        font-size: 4rem;
+        font-weight: bold;
+        padding: 0;
+    }
+    #banner p {
+        position: absolute;
+        top: 200px;
+        left: 67px;
+        color: white;
+        font-size: 1.5rem;
+    }
+    section div {
+        float: left;
+        padding: 1rem;
+    }
+    footer div {
+        float: left;
+        padding: 0.25rem;
+    }
+    footer h3 {
+        padding: 0 0 0.5rem 0;
+    }
+    footer a {
+        font-size: 85%;
+    }
+}

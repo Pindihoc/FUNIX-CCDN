@@ -1,0 +1,147 @@
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #7B8894;
+    border-radius: none;
+    margin: 0;
+    margin-bottom: 0;
+    overflow: auto;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    font-weight: bolder;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+nav ul li a {
+    color: white;
+    margin: 0;
+}
+
+#hr {
+    display: none;
+}
+
+main {
+    margin: 0 5%;
+    overflow: auto;
+}
+
+picture {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 2rem 0;
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+h2 {
+    padding-left: 5%;
+    padding-bottom: 1%;
+}
+
+h2~p {
+    padding-left: 5%;
+}
+
+footer {
+    clear: both;
+    margin: 0 5% 5% 5%;
+    overflow: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    #hr {
+        display: block;
+        border: 2px solid gray;
+    }
+    nav {
+        display: block;
+    }
+    nav ul {
+        display: inline-block;
+        width: fit-content;
+    }
+    nav ul li {
+        margin-left: 3rem;
+    }
+    #right {
+        float: right;
+        margin-right: 3rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #hr {
+        display: none;
+    }
+    main {
+        background-color: lightgray;
+    }
+    nav {
+        display: block;
+        background-color: white;
+    }
+    nav ul {
+        display: inline-block;
+        width: fit-content;
+    }
+    nav ul li {
+        margin-left: 4rem;
+    }
+    nav ul li a {
+        color: gray;
+    }
+    #right {
+        float: right;
+        margin-right: 7rem;
+    }
+    #banner {
+        clear: both;
+        position: relative;
+        background-image: url("https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png");
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 500px;
+        display: block;
+    }
+    #banner h1 {
+        position: absolute;
+        top: 120px;
+        left: 70px;
+        margin: 0px;
+        color: white;
+        font-family: 'Source Serif Pro', serif;
+        font-size: 6rem;
+        font-weight: bold;
+        padding: 0;
+    }
+    #banner p {
+        position: absolute;
+        top: 180px;
+        left: 67px;
+        color: white;
+        font-size: 3rem;
+    }
+}
